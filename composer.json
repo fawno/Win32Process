@@ -1,0 +1,38 @@
+{
+  "name": "fawno/win32process",
+  "description": "Class Win32Process",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Fawno",
+      "homepage": "https://github.com/fawno/win32process/graphs/contributors"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/fawno/win32process/issues",
+    "source": "https://github.com/fawno/win32process"
+  },
+  "require": {
+    "php": ">=7.4.0",
+    "ext-com_dotnet": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Fawno\\Win32Process\\": "src"
+    }
+  },
+  "autoload-dev": {
+      "psr-4": {
+          "Fawno\\Win32Process\\Tests\\": "tests/"
+      }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "@stable"
+  },
+  "scripts": {
+      "test": "phpunit"
+  },
+  "scripts-descriptions": {
+      "test": "Run PHPUnit tests"
+  }
+}
