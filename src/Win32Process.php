@@ -182,7 +182,7 @@
 			}
 
 			if ($filter) {
-				$tasklist = array_intersect_key($tasklist, array_intersect(array_map('reset', $tasklist), $filter));
+        $tasklist = array_intersect_key($tasklist, array_intersect(array_map(function ($item) { return reset($item); }, $tasklist), $filter));
 			}
 
 			return $tasklist;
